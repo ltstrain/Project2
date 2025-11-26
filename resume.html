@@ -4,64 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - London Strain</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="page3.html">Personal</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-    <h1>Resume</h1>
-
-    <div class="resume-section">
-      <h2>Contact Information</h2>
-      <p>Email: <a href="mailto:lstrain@hawk.illinoistech.edu">lstrain@hawk.illinoistech.edu</a></p>
-      <p>Phone: 872-985-1775</p>
-      <p>Gender: Female | Age: 18</p>
-    </div>
-
-    <div class="resume-section">
-      <h2>Education</h2>
+  <header>
+    <h1>London Strain</h1>
+    <nav>
       <ul>
-        <li>Currently attending Illinois Institute of Technology</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="page3.html">Personal</a></li>
       </ul>
-    </div>
+    </nav>
+  </header>
 
-    <div class="resume-section">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS</li>
-        <li>Basic JavaScript</li>
-        <li>Microsoft Office Suite</li>
-      </ul>
-    </div>
+  <main class="container">
+    <h2>My Resume</h2>
 
-    <div class="resume-section">
-      <h2>Availability</h2>
-      <p>Tuesday, Thursday, Weekends</p>
-    </div>
+    <p>This page contains my resume details. Include your work experience, education, and skills here.</p>
 
-    <div class="resume-section">
-      <h2>Experience</h2>
-      <ul>
-        <li>Project 1 Website Development (Class Assignment)</li>
-      </ul>
-    </div>
-
-    <!-- Resume images gallery -->
+    <!-- Career images -->
     <div class="image-gallery">
-      <img src="career1.jpg" alt="Career Image 1">
-      <img src="career2.jpg" alt="Career Image 2">
-      <img src="career3.jpg" alt="Career Image 3">
+      <img src="images/career1.jpg" alt="Career Image 1">
+      <img src="images/career2.jpg" alt="Career Image 2">
+      <img src="images/career3.jpg" alt="Career Image 3">
     </div>
 
-  </div>
+    <!-- Career video -->
+    <video controls width="100%">
+      <source src="media/career_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Project 3 Questions button -->
+    <section>
+      <button id="questions-btn">Questions</button>
+    </section>
+
+  </main>
 
   <footer>
     <p>&copy; 2025 London Strain</p>
