@@ -1,83 +1,47 @@
-:root{
-  --accent: #2b6cb0;
-  --pad: 1rem;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - London Strain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-* { box-sizing: border-box; }
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="page3.html">Personal</a></li>
+    </ul>
+  </nav>
 
-body{
-  margin:0;
-  padding:0;
-  line-height:1.4;
-  color:#222;
-  background:#f9f9fb;
-}
+  <div class="container">
+    <h1>Welcome to London Strain's Website</h1>
 
-header{
-  background: var(--accent);
-  color: white;
-  padding: var(--pad);
-}
+    <div class="home-highlight">
+      <p>Hello! I’m London Strain, an 18-year-old student. I’m available on Tuesday, Thursday, and weekends.</p>
+      <p>Feel free to explore my resume and personal page for more information about me.</p>
+    </div>
 
-header h1 { margin: 0; font-size: 1.25rem; }
+    <!-- Home images in gallery -->
+    <div class="image-gallery">
+      <img src="home1.jpg" alt="Home Image 1">
+      <img src="home2.jpg" alt="Home Image 2">
+      <img src="home3.jpg" alt="Home Image 3">
+    </div>
 
-nav { margin-top: .5rem; }
+    <!-- Audio -->
+    <audio controls>
+      <source src="mediasample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
+  </div>
 
-nav a{
-  color: white;
-  text-decoration: none;
-  font-weight:500;
-}
+  <footer>
+    <p>&copy; 2025 London Strain</p>
+  </footer>
 
-main{
-  padding: var(--pad);
-}
-
-.container { max-width:1100px; margin:0 auto; }
-
-.hero, .home-highlight, .image-gallery {
-  margin-bottom:1rem;
-}
-
-.image-gallery img {
-  max-width:100%;
-  margin:0.5rem 0;
-  border-radius:6px;
-}
-
-button {
-  padding: .6rem .9rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: white;
-  cursor: pointer;
-}
-
-footer {
-  padding: var(--pad);
-  text-align:center;
-  font-size: .9rem;
-  color:#555;
-}
-
-/* Media query 1: min-width 600px */
-@media (min-width:600px){
-  nav a { font-size:1.1rem; }
-  .image-gallery { display:flex; gap:1rem; flex-wrap:wrap; }
-  button { padding:.7rem 1rem; font-size:1rem; }
-}
-
-/* Media query 2: min-width 900px */
-@media (min-width:900px){
-  header { display:flex; justify-content:space-between; align-items:center; padding:1.5rem 3rem; }
-  nav a { margin-right:1.5rem; font-weight:600; }
-  .image-gallery img { max-width:30%; }
-}
+</body>
+</html>
